@@ -1,0 +1,5 @@
+Accuracy: 0.8335
+
+Class	Precision	Recall	F1
+No_diabetes	0.8698	0.7843	0.8249
+Pre_diabetic_or_has_diabetes	0.8036	0.8826	0.8413
