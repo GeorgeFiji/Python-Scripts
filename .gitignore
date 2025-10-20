@@ -1,18 +1,26 @@
-# Python virtual environments
+# ===========================
+# Python Virtual Environments
+# ===========================
 .venv/
 .venv2/
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
-# Python cache
+# ===========================
+# Python Byte-compiled / Optimized
+# ===========================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Distribution / packaging
 .Python
+
+# ===========================
+# Distribution / Packaging
+# ===========================
 build/
 develop-eggs/
 dist/
@@ -25,33 +33,205 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# ===========================
+# PyInstaller
+# ===========================
+*.manifest
+*.spec
 
-# Data files (large CSVs)
+# ===========================
+# Unit Test / Coverage Reports
+# ===========================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.hypothesis/
+
+# ===========================
+# Jupyter Notebook
+# ===========================
+.ipynb_checkpoints
+*.ipynb
+!*_template.ipynb
+
+# ===========================
+# Machine Learning & Data Science
+# ===========================
+# Model files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.pt
+*.pth
+*.onnx
+*.pb
+
+# TensorFlow
+*.ckpt
+*.ckpt.*
+checkpoint
+
+# PyTorch
+*.tar
+
+# Data files (exclude large datasets)
 *.csv
 !11selected.csv
 !final_cleaned.csv
 !requirements.txt
+*.tsv
+*.dat
+*.data
 
-# OS specific
+# ARFF files (Weka)
+*.arff
+!bmi_outliers.arff
+
+# Processed data directories
+data/
+datasets/
+raw_data/
+processed_data/
+
+# ===========================
+# IDE & Editors
+# ===========================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===========================
+# OS Specific
+# ===========================
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
 Thumbs.db
-desktop.ini
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
 
-# Database
+# ===========================
+# Database Files
+# ===========================
 *.sqlite3
 *.db
 *.mdf
 *.ldf
+*.sql
+!schema.sql
+
+# ===========================
+# Log Files
+# ===========================
+*.log
+logs/
+*.out
+
+# ===========================
+# Temporary Files
+# ===========================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.cache
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ===========================
+# Output Directories (Optional - Uncomment if needed)
+# ===========================
+# Uncomment these if you want to exclude output folders from git
+# model_output*/
+# model_outputs*/
+# smote_*/
+# feature_selection_images*/
+
+# ===========================
+# Documentation Build
+# ===========================
+docs/_build/
+site/
+
+# ===========================
+# mypy
+# ===========================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ===========================
+# Pyre type checker
+# ===========================
+.pyre/
+
+# ===========================
+# pytype static type analyzer
+# ===========================
+.pytype/
+
+# ===========================
+# Profiling data
+# ===========================
+.prof
